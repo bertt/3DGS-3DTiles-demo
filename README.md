@@ -2,6 +2,12 @@
 
 A Vite/Node.js viewer for Gaussian Splat 3D Tiles, built with **Three.js**, **3d-tiles-renderer** and the **3D-Tiles-RendererJS-3DGS-Plugin**. Satellite imagery is streamed via `XYZTilesPlugin` onto a WGS84 ellipsoid globe.
 
+## Demo
+
+Cesium: https://bertt.github.io/3DGS-3DTiles-demo/index_cesium.html
+
+3d-tiles-rendererjs-3dgs-plugin: https://bertt.github.io/3DGS-3DTiles-demo/index.html
+
 ## Stack
 
 | Package | Role |
