@@ -20,7 +20,7 @@ import { CameraController } from './cameraController.js';
 // During development this is served by the Vite middleware in vite.config.js.
 // For a production static deploy, put the wilhelmina/ folder next to dist/
 // and configure your server to serve it at /tileset-data/.
-const TILESET_URL = '/tileset-data/tileset.json';
+const TILESET_URL = './tileset-data/tileset.json';
 
 const SATELLITE_IMAGERY = {
   url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
