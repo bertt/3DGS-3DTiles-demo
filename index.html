@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wilhelmina – Gaussian Splat Viewer</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #111; overflow: hidden; height: 100%; }
+    canvas { display: block; }
+
+    #loading {
+      position: fixed; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.65); color: #eee;
+      padding: 14px 22px; border-radius: 8px;
+      font-family: system-ui, sans-serif; font-size: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    #loading::before {
+      content: ''; width: 16px; height: 16px; border-radius: 50%;
+      border: 3px solid #555; border-top-color: #7cc7ff;
+      animation: spin .8s linear infinite; flex-shrink: 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    #info {
+      position: fixed; top: 12px; left: 12px;
+      padding: 8px 12px; background: rgba(0,0,0,0.55);
+      border-radius: 4px; color: #eee;
+      font-family: system-ui, sans-serif; font-size: 13px; line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">Loading Gaussian Splats&hellip;</div>
+  <div id="info">Left-drag to orbit &middot; right-drag to pan &middot; scroll to zoom</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

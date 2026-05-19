@@ -1,0 +1,20 @@
+{
+  "name": "wilhelmina-gaussian-splat-viewer",
+  "version": "1.0.0",
+  "description": "Gaussian Splat 3D Tiles viewer using Three.js, 3d-tiles-renderer and GaussianSplatPlugin",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "3d-tiles-renderer": "^0.4.24",
+    "@sparkjsdev/spark": "^2.0.0",
+    "3d-tiles-rendererjs-3dgs-plugin": "latest"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
