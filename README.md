@@ -8,6 +8,8 @@ Cesium: https://bertt.github.io/3DGS-3DTiles-demo/index_cesium.html
 
 3d-tiles-rendererjs-3dgs-plugin: https://bertt.github.io/3DGS-3DTiles-demo/index.html
 
+Blog see: https://bertt.wordpress.com/2026/05/19/from-phone-to-3d-map-creating-and-visualising-gaussian-splat-3d-tiles/
+
 ## Stack
 
 | Package | Role |
