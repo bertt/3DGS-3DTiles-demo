@@ -40,12 +40,16 @@ const copyCesiumPlugin = {
       console.log('Copied index_cesium.html → dist/index_cesium.html');
     }
 
-    // tileset-data (../wilhelmina → dist/tileset-data)
-    const tilesetSrc = path.join(__dirname, '..', 'wilhelmina');
+    // tileset-data: try local ./tileset-data first (CI), then ../wilhelmina (local dev)
+    const localTileset  = path.join(__dirname, 'tileset-data');
+    const parentTileset = path.join(__dirname, '..', 'wilhelmina');
+    const tilesetSrc = fs.existsSync(localTileset)  ? localTileset
+                     : fs.existsSync(parentTileset) ? parentTileset
+                     : null;
     const tilesetDest = path.join(__dirname, 'dist', 'tileset-data');
-    if (fs.existsSync(tilesetSrc)) {
+    if (tilesetSrc) {
       copyDirSync(tilesetSrc, tilesetDest);
-      console.log('Copied ../wilhelmina → dist/tileset-data');
+      console.log(`Copied ${tilesetSrc} → dist/tileset-data`);
     }
   },
 };
